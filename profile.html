@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTHM Bicycle - Profile</title>
+    <link rel="stylesheet" href="css/stylesProfile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Override Bootstrap's active link styles */
+        .list-group-item-action.active {
+            color: var(--primary-color) !important;
+            background-color: transparent !important;
+            border: none !important;
+        }
+
+        /* Optional hover style for better UX */
+        .list-group-item-action:hover {
+            background-color: var(--secondary-color) !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container light-style flex-grow-1 container-p-y">
+        <h4 class="font-weight-bold py-3 mb-4" style="color: var(--primary-color);">
+            Profile
+        </h4>
+        <div class="card overflow-hidden" style="border: 2px solid var(--primary-color); border-radius: 10px;">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-3 pt-0">
+                    <div class="list-group list-group-flush account-settings-links">
+                        <a class="list-group-item list-group-item-action" style="color: var(--primary-color);" 
+                            href="index.html">Home</a>
+                        <a class="list-group-item list-group-item-action" style="color: var(--primary-color);" data-toggle="list"
+                            href="#account-general">General</a>
+                        <a class="list-group-item list-group-item-action" style="color: var(--text-dark);" data-toggle="list"
+                            href="#account-details">My Ride</a>
+                        <a class="list-group-item list-group-item-action" style="color: var(--text-dark);" data-toggle="list"
+                            href="#account-change-password">Change password</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="account-general">
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Name</label>
+                                    <input type="text" class="form-control" value="WAN MUHAMMAD ATEF BIN WAN MUHAMMAD ADIB">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Username</label>
+                                    <input type="text" class="form-control" value="CI230104">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">E-mail</label>
+                                    <input type="text" class="form-control mb-1" value="ci230104@student.uth.edu.my">
+                                    <div class="alert alert-warning mt-3" style="background-color: var(--secondary-color); color: white;">
+                                        Your email is not confirmed. Please check your inbox.<br>
+                                        <a href="javascript:void(0)" style="color: white;">Resend confirmation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-change-password">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Current password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">New password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Repeat new password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="account-details">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Username</label>
+                                    <input type="text" class="form-control" placeholder="CI230104" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Bicycle Id</label>
+                                    <input type="text" class="form-control" placeholder="by007" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Duration</label>
+                                    <input type="text" class="form-control" placeholder="2 hours" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Total cost</label>
+                                    <input type="text" class="form-control" placeholder="RM 6.00" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Payment Method</label>
+                                    <input type="text" class="form-control" placeholder="Pay with cash" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="account-info">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Bio</label>
+                                    <textarea class="form-control" rows="5">Lorem ipsum dolor sit amet...</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Birthday</label>
+                                    <input type="text" class="form-control" value="May 3, 1995">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Country</label>
+                                    <select class="custom-select">
+                                        <option>USA</option>
+                                        <option selected>Canada</option>
+                                        <option>UK</option>
+                                        <option>Germany</option>
+                                        <option>France</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4" style="color: var(--primary-color);">Contacts</h6>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Phone</label>
+                                    <input type="text" class="form-control" value="+0 (123) 456 7891">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Website</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-social-links">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Twitter</label>
+                                    <input type="text" class="form-control" value="https://twitter.com/user">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Facebook</label>
+                                    <input type="text" class="form-control" value="https://www.facebook.com/user">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" style="color: var(--text-dark);">Instagram</label>
+                                    <input type="text" class="form-control" value="https://www.instagram.com/user">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-notifications">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4" style="color: var(--primary-color);">Activity</h6>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label" style="color: var(--text-dark);">Email me when someone comments on my article</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label" style="color: var(--text-dark);">Email me when someone answers on my forum thread</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-right mt-3">
+            <button type="button" class="btn button1">Save</button>&nbsp;
+            <button type="button" class="btn button2">Cancel</button>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

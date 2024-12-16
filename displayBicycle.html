@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/alia1.jpg">
+    <link rel="stylesheet" href="css/styleDisplayBicycle.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+	
+    <title>UTHM Bicycle</title>
+  </head>
+  <body>
+  <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="index.html">RIGHT BIKE STORE</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+      <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7975.435965925489!2d103.0831499249022!3d1.8591937672356145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smy!4v1734333696676!5m2!1sen!2smy" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">
+          UTHM Map
+        </h2>
+        <p class="section__subheader">
+        The map of Universiti Tun Hussein Onn Malaysia (UTHM) 
+        helps students and visitors navigate the campus easily.
+         It shows important areas like faculty buildings, the library, 
+         residential colleges, and sports facilities. 
+         Key landmarks include the <b>Masjid Sultan Ibrahim</b>, the <b>library</b>, 
+         and various <b>hostels</b> such as 
+         Kolej Tun Dr. Ismail and Kolej Tun Fatimah.
+        </p>
+        
+      </div>
+    </section>
+
+    <section class="project__container" id="project">
+      <div class="project__header">
+        <div>
+          <h2 class="section__header">Ready Bicycle</h2>
+          <p class="section__subheader">
+          Explore the campus or the surrounding areas with our convenient 
+          and well-maintained bicycles available for rent. 
+          We offer a range of bikes for all your commuting needs, 
+          whether you're heading to class, a meeting, or simply enjoying a ride. 
+          Our bicycles are ready for immediate use and regularly checked to ensure 
+          they are in great condition. Rental options are flexible, with hourly, 
+          daily, and weekly rates designed to suit your schedule. 
+          Experience a cost-effective, eco-friendly way to get around!
+          </p>
+        </div>
+        
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+		  
+          <div class="swiper-slide">
+            <div class="project__card">
+                <img src="images/bicycleBlue.png" alt="project" />
+                <div class="project__content">
+                <div class="project__details">
+                    <h4>Blue Bike</h4>
+                    <p>
+                    10 bikes available.
+                    </p>
+                </div>
+                <!-- Book Button -->
+                <div class="action__btns">
+                        <button class="button2" onclick="window.location.href='#'">Book</button>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+		  
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="images/bicycleYellow.png" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Yellow Bike</h4>
+                  <p>
+                  8 bikes available.
+                  </p>
+                </div>
+                <div class="action__btns">
+            <button class="button2" onclick="window.location.href='#'">Book</button>
+
+          </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="images/bicycleRed.png" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Red Bike</h4>
+                  <p>
+                    No bikes available.
+                  </p>
+                </div>
+                <div class="action__btns">
+        <button class="button2 unavailable" disabled>Unavailable</button>
+        <style>
+            /* Disabled button styling */
+button.unavailable {
+  background-color: #ccc; /* Gray color to indicate unavailability */
+  color: #666; /* Light gray text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: not-allowed; /* Change cursor to 'not allowed' */
+  pointer-events: none; /* Completely disable click interaction */
+}
+
+button.unavailable:hover {
+  background-color: #ccc; /* Keep color the same on hover */
+}
+
+        </style>
+      </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+  <div class="project__card">
+    <img src="images/bicycleGreen.png" alt="project" />
+    <div class="project__content">
+      <div class="project__details">
+        <h4>Green Bike</h4>
+        <p>
+          No bikes available.
+        </p>
+      </div>
+      <div class="action__btns">
+        <button class="button2 unavailable" disabled>Unavailable</button>
+        <style>
+            /* Disabled button styling */
+button.unavailable {
+  background-color: #ccc; /* Gray color to indicate unavailability */
+  color: #666; /* Light gray text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: not-allowed; /* Change cursor to 'not allowed' */
+  pointer-events: none; /* Completely disable click interaction */
+}
+
+button.unavailable:hover {
+  background-color: #ccc; /* Keep color the same on hover */
+}
+
+        </style>
+      </div>
+    </div>
+  </div>
+</div>
+
+		  
+		  
+        </div>
+      </div>
+    </section>
+
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="java/main.js"></script>
+  </body>
+</html>
